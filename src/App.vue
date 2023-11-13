@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <table-page></table-page>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    tablePage: () => import('./components/table.vue')
   }
 }
 </script>
@@ -24,5 +22,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.customClassDropdown11111 .el-dropdown-menu__item{
+  background-color: red;
+  border-width: 10px;
 }
 </style>
