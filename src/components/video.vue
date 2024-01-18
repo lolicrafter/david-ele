@@ -5,6 +5,9 @@
 <script>
 import 'video.js/dist/video-js.css'
 import 'vue-video-player/src/custom-theme.css'
+import VueVideoPlayer from 'vue-video-player'
+import Vue from "vue";
+Vue.use(VueVideoPlayer)
  export default {
   name: 'ThisvideoPlayer',
   data() {
@@ -28,7 +31,9 @@ import 'vue-video-player/src/custom-theme.css'
             // src: require('./testVideo.mp4') // url地址
             // src: 'https://vjs.zencdn.net/v/oceans.mp4' // url地址
             // src: 'https://d2zihajmogu5jn.cloudfront.net/sintel/master.m3u8' // url地址
-            src: 'http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8' // url地址
+            // src: 'http://cg12.hunancatv.cn:9090/live/CWJD.m3u8?t=Q3ZTI5YWVmMmUwM==&d=7e29aef2e03907f&pid=&cid=20&u=freeuser&l=001&sid=My5f5evM7A+JM7kBEt7zRg==&r=20240116195900&e=20240117195900&nc=5juVZbdBPOgB&a=7&v=2&hlsSessionID=7114844658832085543&srchost=172.16.22.158:8060&gid=1cTuE8i8Z%2F6MoBf3Sw1THw%3D%3D' // url地址
+            // src: 'https://gctxyc.liveplay.myqcloud.com/gc/emsyh_1/index.m3u8?contentid=2820180516001' // url地址
+            src:'https://iptv.luas.edu.cn/liverespath/b455c7a019d404d571655c457e0ee8a9440a7802/e0eea3f2cd-0-0-7b16046e28b9e794d06c5fbcc82d37b9/index.m3u8'
           }
         ],
         // poster: require('../../assets/loading.gif'), // 你的封面地址
